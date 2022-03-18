@@ -1,0 +1,95 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    background-color: rgb(53, 53, 53);
+    font-family: 'Nunito', sans-serif;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    text-align: left;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(160, 35, 52);
+    align-items : center;
+    box-shadow: 0 0 24px rgb(37, 37, 37), 0 0 34px rgb(32, 32, 32);
+    transition: 2s;
+}
+nav a{
+    display: block;
+    color:rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition: 1s;
+    padding: 2px;
+    margin-left: -10px;
+}
+
+nav a:hover{
+    background-color: rgb(233, 233, 233);
+    color: rgb(160, 35, 52);
+    transform: translateX(10px);
+  
+}
+
+.X{
+    position: relative;
+    height: 50px;
+    
+    width: 50px;
+    background-color: rgb(160, 35, 52);
+    left:150px;
+    border-top-right-radius: 50% ;
+    border-bottom-right-radius: 50% ;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    padding-top: 6px;
+    
+    transition: 2s;
+    
+    cursor: pointer;
+
+}
+
+
+
+.X div{
+    height: 4px;
+    width: 30px;
+    border-radius: 2px ;
+    background-color:rgb(233, 233, 233) ;
+    margin-top: 6px;
+    margin-left:8px;
+    transition: 2s;
+}
+
+.active{
+    transform:translateX(-250px);
+  
+}
+
+.active-X{
+    transform: translateX(-60px);
+}
+
+.X0{
+    transform: rotate(-45deg) translateY(14px);
+}
+
+.X1{
+    opacity: 0;
+}
+
+.X2{
+    transform: rotate(45deg) translateY(-14px);
+}
